@@ -44,5 +44,8 @@ def turn (board)
     number = gets.chomp
     index = input_to_index(number)
   end
+  
+  move(board, index, current_player = "X")
+  
 
 end
