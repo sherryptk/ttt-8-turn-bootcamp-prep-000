@@ -15,10 +15,8 @@ def move(board, index, current_player = "X")
 end
 
 def valid_move?(board,index)
-  if index > 8
+  if index > 8 || index < 0
       false
-  elsif index < 0
-    false
     elsif position_taken?(board, index)
       false
     else
